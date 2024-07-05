@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddProductActivity">
+
+    <LinearLayout
+        android:id="@+id/toptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#30d0df"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backimgf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_arrow_back"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/productaddimageid"
+        android:layout_width="135dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/bbcolor"
+        android:backgroundTint="#CFD3DC"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toptoolbar" />
+
+    <LinearLayout
+        android:id="@+id/productlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productaddimageid">
+
+        <TextView
+            android:id="@+id/productaddfromgallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="choose from Gallery" />
+
+        <TextView
+            android:id="@+id/productaddfromcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="choose from Camera" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/productaddtitleid"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productlinear" />
+
+    <EditText
+        android:id="@+id/productadddesid"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productaddtitleid" />
+
+    <EditText
+        android:id="@+id/productaddpriceid"
+        android:layout_width="244dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productaddtitleid" />
+
+    <EditText
+        android:id="@+id/productaddquantityid"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productaddtitleid" />
+
+    <Button
+        android:id="@+id/productaddbtnid"
+        android:layout_width="106dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:background="#30d0df"
+        android:text="Add Product"
+        app:layout_constraintEnd_toEndOf="@+id/productaddquantityid"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/productaddquantityid"
+        app:layout_constraintTop_toBottomOf="@+id/productaddquantityid" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edittextproductname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Update product name"
+        android:textStyle="bold"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edittextproductdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Update product Description"
+        android:textStyle="bold"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edittextproductquantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Update product Quantity"
+        android:textStyle="bold"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edittextproductprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Update product Price"
+        android:textStyle="bold"
+        android:minHeight="48dp" />
+
+</LinearLayout>

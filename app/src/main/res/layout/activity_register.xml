@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    android:foregroundTint="#00504848"
+    tools:context="com.example.babybuy.Activity.RegisterActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstnameInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastnameInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/firstnameInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/firstnameInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameInputLayout">
+        <EditText
+            android:id="@+id/stitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:fontFamily="sans-serif"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/lastnameInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/lastnameInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameInputLayout">
+
+        <EditText
+            android:id="@+id/sdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:fontFamily="sans-serif"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/emailInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/emailInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/emailInputLayout">
+
+        <EditText
+            android:id="@+id/squnatity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPasswordInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/passwordInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/passwordInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout">
+
+        <EditText
+            android:id="@+id/sprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:fontFamily="sans-serif"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnsendsms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#AA49E6"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPasswordInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/confirmPasswordInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordInputLayout" />
+
+    <TextView
+        android:id="@+id/ahaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:shadowColor="@color/white"
+        android:text="Already have an account? "
+        android:textColor="@color/greencolor"
+        app:layout_constraintEnd_toEndOf="@+id/btnsendsms"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnsendsms"
+        app:layout_constraintTop_toBottomOf="@+id/btnsendsms" />
+
+    <TextView
+        android:id="@+id/rsingup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="sans-serif"
+        android:shadowColor="@color/colorRed"
+        android:text="Click here to Login"
+        android:textColor="#FBF8F8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ahaa"
+        app:layout_constraintTop_toBottomOf="@+id/btnsendsms" />
+</androidx.constraintlayout.widget.ConstraintLayout>
